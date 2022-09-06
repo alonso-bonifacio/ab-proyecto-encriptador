@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <img src="images/logo.svg" class="logo" id="logo" alt="Logo Alura">
+        <section>
+            <textarea class="text-input" type="text" name="texto" maxlength="250" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+            
+            <div class="form-group">
+                <img src="images/!.png" class="img-alerta" alt="imagen de alerta">
+                <label for="texto">Solo letras minúsculas y sin acentos</label>
+            </div>
+            
+            <div class="botones-div">
+                <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+                <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+            </div>
+        </section>
+        <section class="caja-mensaje">
+            <div id="div-desaparece" class="caja-mensaje-div">
+                <img src="images/mensaje.svg" alt="imagen de mensaje no encontrado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+            </div>
+            <div id="div-aparece">
+                <textarea class="div-mensaje" type="text" id="mensaje" placeholder="Ningún mensaje" readonly></textarea>
+                <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Proyecto Encriptador - Alonso Bonifacio - 2022</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

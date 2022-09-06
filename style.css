@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    background: black url(images/scroll.jpeg);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+.titulo {
+    padding: 15px;
+    width: 30vw;
+    margin: auto;
+}
+
+.btn-encriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #0A3871;
+    border-radius: 24px;
+    border-color: transparent;
+    flex: none;
+    order: 0;
+    margin: 0px 24px;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 700ms transform;
+}
+
+.btn-encriptar:hover {
+    transform: scale(108%);
+    border: 2px dashed white;
+}
+
+.btn-desencriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    margin: 0px 24px;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 700ms transform;
+}
+
+.btn-desencriptar:hover {
+    transform: scale(108%);
+    border: 2px dashed #0A3871;
+}
+
+.text-input {
+    position: absolute;
+    width: 670px;
+    height: 370px;
+    left: 15%;
+    top: 168px;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    justify-content: baseline;
+    resize: none;
+    color: #0A3871;
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;   
+    border: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-input:focus {
+    border: none;
+    outline: none;
+}
+
+.caja-mensaje {
+    position: absolute;
+    width: 400px;
+    height: 750px;
+    left: 70%;
+    top: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.caja-mensaje h2 {
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.caja-mensaje h3 {
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.caja-mensaje-div,
+.caja-mensaje-div img {
+    padding-top: 40px;
+    background: #FFFFFF;
+}
+
+.img-alerta {
+    position: absolute;
+}
+
+label {
+    position: static;
+    width: auto;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: auto;
+    height: 18px;
+    left: 13%;
+    top: 651px;
+    
+}
+
+.botones-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 12%;
+    top: 685px;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    right: 37.43%;
+    top: 25px;
+    bottom: 0%;
+    cursor: pointer;
+    width: 180px;
+    height: 72px; 
+    filter: drop-shadow(-1px 1px 2px #FFF);
+}
+
+.logo:hover {
+    transform: scale(108%);
+    filter: drop-shadow(-1px 1px 4px #FFF);
+}
+
+.div-mensaje {
+    position: absolute;
+    width: 400px;
+    height: 781px;
+    left: 60px;
+    top: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    resize: none;
+    color: #495057;
+    border: none;
+    background: transparent;
+}
+
+.div-mensaje:focus {
+    border: none;
+    outline: none;
+}
+
+.btn-copiar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 25px;
+    top: 660px;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-copiar:active{
+    color: white;
+    background: rgba(46, 204, 113);
+    border: 1px solid black;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 8px;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin: 8.5px;
+}
+
+@media only screen and (min-width: 1224px) and (max-width: 1590px) {
+    main {
+        height: 93%;
+    }
+
+    .text-input {
+        top: 8rem;
+        left: 7.1rem;
+        word-wrap: break-word;
+    }
+
+    .logo {
+        left: 1rem;
+        width: 8%;
+    }
+
+    .botones-div {
+        top: 34.5rem;
+        left: 5rem;
+    }
+
+    .form-group {
+        left: 7.3rem;
+        top: 32rem;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        font-size: 24px;
+        height: 65px;
+    }
+
+    .caja-mensaje {
+        top: 1.5rem;
+        height: 38rem;
+        left: 56rem;
+    }
+
+    .caja-mensaje-div {
+        padding-top: 0rem;
+        height: 20rem;
+        padding-left: 1rem;
+    }
+
+    .caja-mensaje-div img {
+        width: 18rem;
+        padding-left: 1.5rem;
+    }
+
+    .btn-copiar {
+        top: 33rem;
+        height: 64px;
+        font-size: 24px;
+    }
+
+    .div-mensaje {
+        width: 20rem;
+        left: 2.5rem;
+        word-wrap: break-word;
+    }
+
+}
